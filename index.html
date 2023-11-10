@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<title>COVID-19 STATS</title>
+</head>
+<body>
+
+<div class="container">
+	
+	<h1>COVID-19</h1>
+	<h3 id="date">DATE</h3>
+
+	<form autocomplete="off">
+		<input type="text" name="search" id="searchcountry" required list="countries" placeholder="Search by Country Name">
+		<datalist id="countries">
+			<option value="World">World</option>
+		</datalist>
+		<button>Search</button>
+	</form>
+
+	<h2 id="countryName">The World</h2>
+
+	  <div class="content">
+
+		<div class="box confirmed">
+			<p>Confirmed</p>
+			<h3>0</h3>
+			<i class="fa fa-plus"></i>
+		</div>
+
+		<div class="box recovered">
+			<p>Recovered</p>
+			<h3>0</h3>
+			<i class="fa fa-plus "></i>
+
+		</div>
+
+		<div class="box deaths">
+			<p>Deaths</p>
+			<h3>0</h3>
+			<i class="fa fa-plus"></i>
+
+		</div>
+
+		<div class="chart" id="charts"></div>
+
+	</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
